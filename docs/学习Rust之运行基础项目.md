@@ -39,6 +39,9 @@ cargo 1.27.0 (1e95190e5 2018-05-27)
 rustup install nightly
 #or
 rustup install beta
+
+# view local documents
+rustup doc
 ```
 
 # 三、创建新项目
