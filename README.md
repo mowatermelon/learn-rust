@@ -33,7 +33,36 @@ $ git clone -b bird https://git.coding.net/melonHero/learn_rust.git bird
 cd bird
 
 # run this project
-cargo run  
+$ cargo run
+  # you can see
+   Compiling melon v0.2.0 ({the root folder of the current project})
+    Finished dev [unoptimized + debuginfo] target(s) in {your project compile time}s
+     Running `target\debug\melon.exe`
+
+---------------------Guess the number!
+
+Please input your guess:
+20
+The number you guessed is too small!
+
+Please input your guess:
+53
+The number you guessed is too big!
+
+# until you enter the correct number
+
+Please input your guess:
+43
+You win!
+
+---------------------Yes,the secret number is: 43
+
+
+---------------------Guess the number!
+
+Please input your guess:
+
+# You can always start playing again and guess at the game,until you hit CTRL+C
 ```
 
 ## build project
