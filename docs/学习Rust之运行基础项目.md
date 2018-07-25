@@ -44,7 +44,27 @@ rustup install beta
 rustup doc
 ```
 
-# 三、创建新项目
+# 三、更换镜像源
+
+由于`Cargo` 使用的是亚马逊在美国的服务器，所以默认先更换成[中科大的镜像源](https://lug.ustc.edu.cn/wiki/mirrors/help/rust-crates)
+
+```sh
+# 修改对应config文件，win系统和mac系统，都可以执行这条指令
+$ vi $HOME/.cargo/config
+
+# 打开config之后，里面应该是一个空文件，将以下内容输入进去
+[source.crates-io]
+registry = "https://github.com/rust-lang/crates.io-index"
+replace-with = 'ustc'
+[source.ustc]
+registry = "git://mirrors.ustc.edu.cn/crates.io-index"
+
+
+# 注意，如果所处的环境中不允许使用 git 协议, 可以把上述最后一行改为
+registry = "http://mirrors.ustc.edu.cn/crates.io-index"
+```
+
+# 四、创建新项目
 
 ## 1、使用 `new 项目名称` 创建新项目
 
@@ -95,7 +115,7 @@ fn main() {
 }
 ```
 
-# 四、编译项目
+# 五、编译项目
 
 ```sh
 $ cargo build
@@ -145,7 +165,7 @@ $ cargo build
 ├── .rustc_info.json
 ```
 
-# 五、运行项目
+# 六、运行项目
 
 ```sh
 $ cargo run
@@ -160,7 +180,7 @@ $ cargo run
 Hello, watermelon!
 ```
 
-# 六、获取帮助
+# 七、获取帮助
 
 ## 1 获取所有帮助
 
