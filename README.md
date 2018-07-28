@@ -27,7 +27,7 @@ cargo 1.27.0 (1e95190e5 2018-05-27)
 
 ```sh
 # clone this repository
-$ git clone -b bird https://git.coding.net/melonHero/learn_rust.git bird
+$ git clone -b bird https://git.coding.net/melonHero/learn-rust.git bird
 
 # go into the repository
 cd bird
