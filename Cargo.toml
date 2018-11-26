@@ -1,0 +1,9 @@
+[package]
+name = "web_service"
+version = "0.1.0"
+authors = ["mowatermelon <neefoxmo@gmail.com>"]
+
+[dependencies]
+rocket = "0.3.6"
+rocket_codegen = "0.3.6"
+rustc-serialize = "0.3.18"
